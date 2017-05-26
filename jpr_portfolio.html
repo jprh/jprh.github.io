@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JPR portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito|Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+  <style media="screen">
+    *{
+      font-family: roboto;
+    }
+    body{
+      margin: 0;
+    }
+    p{
+      line-height: 2.5;
+      font-family: roboto;
+    }
+    nav ul {
+      /*top: 0;
+      right: 0;*/
+      width: 100%;
+      list-style-type: none;
+      margin-top: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    nav {
+      position: fixed;
+      z-index: 10;
+      left: 0;
+      right: 0;
+    }
+    nav li {
+      float: left;
+    }
+    nav li:first-child{
+      margin-left: 20%;
+    }
+    nav li:last-child{
+      margin-right: 20%;
+      float: right;
+    }
+    li{
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 20px 30px;
+      text-decoration: none;
+    }
+    nav a{
+      color: white;
+      text-decoration: none;
+    }
+    a:last-child{
+      border-right: none;
+    }
+    a:hover{
+      color: 	#1E90FF;
+      font-weight: bolder;
+    }
+    li:hover {
+      background-color: #111;
+    }
+    .active {
+      background-color: #4CAF50;
+    }
+    .me-img {
+      /*background-image: url(file:///Users/juanpabloravelo/Dropbox/Infografic%20Support/Ima%CC%81genes/JPR%20Coding%20Image%20Wyncode-students-working.jpeg);*/
+      /*background-color: black;
+      opacity: 0.7;*/
+      background: -webkit-linear-gradient(top, rgba(156, 39, 176, 0.69), rgba(0, 0, 255, 0.78)), url(file:///Users/juanpabloravelo/Dropbox/Infografic%20Support/Ima%CC%81genes/JPR%20Coding%20Image%20Wyncode-students-working.jpeg);
+      /*background-repeat: no-repeat;*/
+      background-size: cover;
+      background-position: bottom top;
+      padding: 300px;
+      /*background: -webkit-linear-gradient(top, purple, blue);*/
+    }
+    .me-img h1{
+      color: white;
+      font-size: 20em;
+      font-family: nunito;
+      font-weight:  700;
+      text-shadow: 0px 10px 30px rgba(25, 0, 128, 0.6);
+      opacity: 0.6;
+      margin-left: -20%;
+      z-index: -10;
+    }
+    .me-text{
+      background-color: white;
+      color: gray;
+      font-family:roboto;
+      text-align: justify;
+      font-weight: 300;
+      line-height: 1.2;
+      align-content: center;
+      /*padding: 0 20% 0 20% 0;*/
+    }
+    .me-text h1{
+      text-align: center;
+      padding: 50px 10% 5px 10%;
+      font-size: 4em;
+      font-weight: 800;
+      font-family: nunito;
+    }
+    .me-text h2{
+      text-align: center;
+      padding: 10px 10% 5px 10%;
+      font-size: 2em;
+      font-family: nunito;
+    }
+    .Me p {
+      font-size: 22px;
+      padding: 30px 20%;
+      line-height: 2.5em;
+    }
+    .me-line{
+      margin: auto;
+      width: 10%;
+      margin-bottom: 100px;
+      margin-top: 50px;
+      /*margin-bottom: 30px:*/
+      /*margin-left: 25px;
+      margin-top: 30px;
+      margin-right: 1000px;*/
+      border-bottom: 5px gray solid;
+    }
+    .Expertise h3{
+      text-align: center;
+      padding-bottom: 10px;
+      font-size: 32px;
+    }
+    .Expertise {
+      background-image: url(file:///Users/juanpabloravelo/Dropbox/Infografic%20Support/Design%20Assets/Gradients%20and%20backgrounds/018%20Cloudy%20Knoxville.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom top;
+      padding: 50px 20% 75px 20%;
+      margin: 0 auto;
+      font-family: roboto;
+      line-height: 2;
+      color: gray;
+    }
+    .Expertise ul{
+      text-align: center;
+      padding: 0;  
+    }
+    .Expertise li {
+      list-style: none;
+      display: block;
+      border: 1px gray dotted;
+      padding: 30px 20px;
+      margin: 15px;
+      color: gray;
+      font-size: 1.5em;
+      font-weight: bolder;
+    }
+    .Expertise li:hover {
+      background: -webkit-linear-gradient(top, purple, blue);
+      color: white;
+    }
+    .Work {
+      background-image: url(file:///Users/juanpabloravelo/Dropbox/Infografic%20Support/Design%20Assets/Gradients%20and%20backgrounds/168%20Night%20Call.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    .presentations{
+      width: 60%;
+      margin: 0 auto;
+      /*padding: 150px;*/
+      /*max-width: 100%;
+      background-size:contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 3px 0 white solid;*/
+    }
+    .presentations img{
+      /*padding: 0 10%;*/
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+    }
+    .Additional {
+      background-image: url(file:///Users/juanpabloravelo/Dropbox/Infografic%20Support/Design%20Assets/Gradients%20and%20backgrounds/018%20Cloudy%20Knoxville.png);
+      padding: 100px 20%;
+      color: gray;
+      font-size: 22px;
+      text-align: justify;
+    }
+    .Contact{
+      padding: 100px;
+      text-align: center;
+    }
+    .Contact h2{
+      font-size: 6em;
+    }
+    footer{
+      background: -webkit-linear-gradient(top, blue, purple);
+      padding: 100px;
+      text-align: center;
+    }
+    .fa {
+      color:white;
+      padding-right: 20px;
+    }
+
+    @media screen and (max-width: 940px) {
+      nav li {
+        float: none;
+      }
+      nav li:first-child{
+        margin-left: 0;
+      }
+      nav li:last-child{
+        margin-right: 0;
+        float: none;
+      }
+      li{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 30px;
+        text-decoration: none;
+        border-bottom:white solid 0.5px;
+      }
+      nav a{
+        color: white;
+        text-decoration: none;
+      }
+      a:last-child{
+        border-right: none;
+      }
+      a:hover{
+        color: 	#1E90FF;
+        font-weight: bolder;
+      }
+      li:hover {
+        background-color: #111;
+      }
+      .active {
+        background-color: #4CAF50;
+    }
+    .me-img {
+      width: 100%;
+      padding: 200px;
+      /*background: -webkit-linear-gradient(top, purple, blue);*/
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .me-img h1{
+      font-size: 15em;
+      font-family: nunito;
+      font-weight:  700;
+      text-shadow: 0px 10px 30px rgba(25, 0, 128, 0.6);
+      opacity: 0.6;
+      margin-left: 10%;
+      margin-right: 10%;
+      /*z-index: -10;*/
+    }
+    .me-text p{
+      font-size: 1.2em;
+    }
+    .Additional {
+      font-size: 18px;
+      text-align: justify;
+    }
+  }
+    </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#s-me-text">Me</a></li>
+      <li><a href="#s-expertise">Expertise</a></li>
+      <li><a href="#s-work">Work</a></li>
+      <li><a href="#s-additional">Additional</a></li>
+      <li><a href="#s-contact">Contact me</a></li>
+    </ul>
+  </nav>
+  <section class="Me" id="s-me">
+    <div class="me-img">
+      <h1>JPR</h1>
+    </div>
+    <div class="me-text" id="s-me-text">
+      <h1>JUAN PABLO RAVELO</h1>
+      <h2>Entrepreneur, consultant, technology curious</h2>
+      <p>I am a Business and Marketing consultant who help individuals and businesses build and execute strategies that increase their revenue, improve brand presence and perception, drive more traffic online and generate more business opportunities. Functioning as advisor or implementer you can expect a different perspective to your client’s requirements.
+        I can measure my success in the positive impact generated in several organizations across diverse industries. My goal always is to contribute with my customer’s success, deliver a quality result and meet the deadlines.
+        My approach to any given task is to evaluate the goals required, brain-storm possible solution, generate the appropriate strategy and then implement a clean solution. I believe successful collaboration depends on effective communication.
+      </p>
+      <div class="me-line"></div>
+    </div>
+  </section>
+  <section class="Expertise" id="s-expertise">
+    <h3>Some of my specific experience</h3>
+    <ul>
+      <li>Financial Analysis</li>
+      <li>Business Strategy</li>
+      <li>Market Strategy</li>
+      <li>Inbound Marketing Strategy</li>
+      <li>Visual Design</li>
+      <li>Corporate Presentations</li>
+    </ul>
+  </section>
+  <section class="Work" id="s-work">
+    <div class="presentations" id="box-shadow"><img src="file:///Users/juanpabloravelo/Desktop/Screen%20Shot%202017-05-23%20at%2010.56.06%20AM.png" alt=""></div>
+    <div class="presentations" id="box-shadow"><img src="file:///Users/juanpabloravelo/Desktop/Screen%20Shot%202017-05-23%20at%2010.56.12%20AM.png" alt=""></div>
+    <div class="presentations" id="box-shadow"><img src="file:///Users/juanpabloravelo/Desktop/Screen%20Shot%202017-05-23%20at%2010.57.18%20AM.png" alt=""></div>
+    <div class="presentations" id="box-shadow"><img src="file:///Users/juanpabloravelo/Desktop/Screen%20Shot%202017-05-23%20at%2010.57.41%20AM.png" alt=""></div>
+  </section>
+  <section class="Additional" id="s-additional">
+    <p><p>Some additional business experience includes: <strong>Business development, business planning, financial analysis, Montecarlo simulation and financial forecast. </strong>
+      Feel free to contact me if you’re interested in my services and think we are the right fit. <em>It’d be great to work together.<em>
+      </p></p>
+    </section>
+    <section class="Contact" id="s-contact">
+      <h2>Let's Talk</h2>
+    <a href="mailto:juanpabloravelo@gmail.com">juanpabloravelo@gmail.com</a>
+    <p>(786) 602-4069</p>
+    <p></p>
+    </section>
+    <footer>
+      <a href="https://www.facebook.com/Tactics-Consulting-1268184299932263/" target="_blank"><i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/juanpabloravelo/" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+    </footer>
+  </body>
+  </html>
